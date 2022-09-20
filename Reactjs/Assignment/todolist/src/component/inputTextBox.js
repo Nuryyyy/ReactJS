@@ -13,7 +13,7 @@ function Form({setInputText, todos, setTodos, inputText}) {
         //this won't automatically reset/refresh the textbox where we type our input/s after clicking button
         textValue.preventDefault();
         console.log("submit")
-        setTodos([...todos,{text: inputText, id: Math.random()*1000}]);
+        setTodos([...todos,{text: inputText, id: Math.random()*1000}]); //we set id so we can delete, Reactjs will know to render which
 
         //reset the value of array only, not refresh 
         //ERROR
