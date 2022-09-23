@@ -1,0 +1,31 @@
+Ways to create button:
+
+#1
+//This is for button to redirect to new page
+<button id="myButton" class="float-left submit-button" >Home</button>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "www.yoursite.com";
+    };
+</script>
+
+#2 Linking href
+<a href="anotherpage.html">
+    <button>My button</button>
+</a>
+
+#3 html form tags
+<form action="namepage.html">
+    <input type="submit"/>
+</form>
+
+#4 JavaScript onclickevent
+<button onClick='nameof_OnClick()'>Submit</button>
+
+<script>
+    function nameof_OnClick(){
+        document.location.href="pathname.html";
+    }
+</script>
+

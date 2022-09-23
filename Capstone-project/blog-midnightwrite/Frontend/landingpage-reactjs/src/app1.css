@@ -1,0 +1,192 @@
+
+
+/* start of imported fonts */
+/* Font for header */
+@font-face { 
+    font-family: 'tisasans_header';
+    src: url('./font/header_TisaSansPro-BlackItalic.woff'); 
+    /* font-weight: normal;
+    font-style: normal; */
+  }
+  /* title font */
+  @font-face {
+    font-family: 'tisasans_title';
+    src: url('./font/title_TisaSansPro-Bold.woff'); 
+    
+  }
+  
+  /* body font */
+  @font-face {
+    font-family: 'tisasans_body';
+    src: url('./font/body_TisaSansPro-Regular.woff'); 
+  }
+  /* end of imported fonts */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    /* text-decoration: none; */
+    /* box-sizing: border-box;  for zero margin*/
+    /* font-family: "tisasans_body"; */
+  }
+  
+  /* start of landing page */
+  
+  body{
+    background-image: url('./images/Midnightwrite_background.svg');
+    background-color: #F7F8FA;
+    height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin: 0;
+  
+  }
+  
+  /* start of container*/
+  
+  .container{
+    display: flex;
+    height: 100vh;
+    background-color: #F7F8FA;
+  }
+  
+  .image-logo{
+    width: 150vh;
+    background-image: url('./images/midnightwrite_2.svg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+  }
+  /* description beside the logo image */
+  .sidecontent{
+    text-align: center;
+    padding: 3.5%;
+    width: 450px;
+    margin-top: 10%;
+    font-family: 'tisasans_header';
+    font-size: 0.8em;
+    justify-content: space-between;
+    color: #363062;
+  }
+  
+  /* button setting */
+  .button-option-landingpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  
+  }
+  
+  .click-btn {
+    font-family: "tisasans_title";
+    background-color: #363062; 
+    border: none;
+    color: #F7F8FA;
+    padding: 10px;
+    align-items: center;
+    text-decoration:none;
+    font-size: 0.8em;
+    cursor: pointer;
+    border-radius: 12px ;
+    display: inline-block;
+    width: 150px;
+    margin: 7px;
+  }
+  
+  .click-btn:hover {
+    background-color: #F7F8FA;
+    color: #363062;
+    border-style:solid;
+  
+  }
+  
+  /* start of button option for the create and sign in */
+  /* end of container page */
+  
+  /* modal section */
+  #bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(0, 0, 0, 0.8);
+    /* opacity: 0.8; */
+    position: absolute;
+    top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+    
+  }
+  
+  #bg-modal a{
+    font-family: 'tisasans_body';
+    font-size: small;
+  }
+  
+  .modal-contents {
+  height: 300px;
+  width: 500px;
+  background-color: #F7F8FA;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
+  
+  }
+  
+  input {
+    font-family: 'tisasans_body';
+  margin: 15px auto;
+  display: block;
+  width: 50%;
+  padding: 5px;
+  border: 1px solid gray;
+  }
+  
+  .close, .exit{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 42px;
+  color: black;
+  transform: rotate(45deg);
+  cursor: pointer;
+  
+  }
+  
+  .close:hover, .exit:hover, a:hover{
+  color: #666;
+  
+  }
+  
+  .logo {
+    border-radius: 50%;
+    height: 30%;
+  }
+  
+  /* end of modal section */
+  
+  @media all and (max-width: 700px) {
+    .container{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+  
+    .image-logo{
+        width: auto;
+        height: 100%;
+        background-image: url('./images/midnightwrite_3.svg');
+        background-size:cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+  
+    .sidecontent{
+        width: auto;
+        height: 100%;
+    }
+  
+  }
