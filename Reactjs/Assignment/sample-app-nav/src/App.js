@@ -1,7 +1,7 @@
 import TopBar from './component/TopBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import MovieListPage from './page/MovieListPage';
-import Books from './page/Books';
+import Books from './page/book/Books';
 import About from './page/About';
 import Home from './page/Home';
 

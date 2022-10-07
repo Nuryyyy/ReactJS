@@ -1,0 +1,9 @@
+const MemeBoxItem = ({key, title, imageUrl}) => {
+    return (
+        <li key={key}>
+            
+        </li>
+    )
+}
+
+export default MemeBoxItem
