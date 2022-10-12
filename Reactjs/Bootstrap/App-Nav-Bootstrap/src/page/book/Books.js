@@ -51,18 +51,19 @@ export default function Bookslist() {
             <header className="App-header">
                 <div className="container">
                     <h1>Books:</h1>
-                    <ul className="row">
+                    <ul className="row row-cols-1 row-cols-md-4 g-4" >
                         {bookList.map((item, index) =>
                                 {
                                     return  (
-                                 
-                                    
-                                    <li key={index} className="col-4">
-                                    <div className="card">
+
+                                    <li key={index} className="col">
+                                    <div >
                                         <img src={item.imageUrl}
                                          alt={item.title} className="card-img-top"></img>
                                     </div>
-                                        <p>{item.title}</p> 
+                                    <span className="card-text badge text-wrap text-break fw-normal">
+                                            {item.title}
+                                    </span>
                                     </li>
                         
                                     )
